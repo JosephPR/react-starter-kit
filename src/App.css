@@ -1,20 +1,124 @@
+a{
+  color: rgb(98, 43, 226);
+  font-size: 30px;
+  
+}
+a:hover{
+  color: yellow;
+  
+}
+li {
+  list-style: none;
+
+}
+
+h2{ 
+  color: rgb(8, 146, 31);
+  text-align: center;
+  font-size: 50px;
+}
+.github-links{
+  background: linear-gradient(to bottom, #b4e391 0%,#94e42c 44%,#23d14f 89%);
+ height: 500px;
+  margin-top: -45px;
+}
+.cards{
+   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 24px;
+  justify-items: center;
+}
+.cards > li {
+  margin-top: 20%;
+}
+.pastels{
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  margin-top: -20px;
+  height: 200%;
+  background-color: rgb(251, 192, 82);
+  color: rgb(52, 62, 207)
+
+}
+.pastels-content{
+  margin: 5%;
+  padding:7%;
+  line-height: 2rem;
+  font-size: 22px;
+}
+.pastels-2{
+  display: grid;
+  grid-template-columns:2.5fr   1fr ;
+  margin-top: -20px;
+  height: 200%;
+  background-color: rgb(232, 255, 128);
+  color: rgb(136, 35, 161)
+
+}
+.pastels-content-2{
+  margin:5%;
+  padding:10%;
+  line-height: 2rem;
+  font-size: 22px;
+}
+.js{
+  margin-top: 20%;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
+.App-logo-2 {
   height: 40vmin;
   pointer-events: none;
+  margin-top: 30%;
+  margin-left: 13%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .App-logo-2 {
+    animation: App-logo-spin 9s linear infinite;
   }
 }
+.player{
+  padding:5%;
+}
+.video-container{
+  background: linear-gradient(to bottom, #1105be 0%,#2cc8e4 44%,#2f8b46 89%);
+ height: 600px;
+  margin-top: -45px;
+}
+.videos{
+  display: grid;
+ grid-template-columns: 1fr 1fr;
+ font-size: 24px;
+ justify-items: center;
+}
 
+.footer {
+  height:200px;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  font-family: monospace;
+  text-align: center;
+  padding-top: 10%;
+}
+.image{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+background-image: url("https://thedevcouple.com/wp-content/uploads/2017/10/Interview-React-2.jpg");
+background-size: cover;
+height: 500px;
+color: lightblue;
+
+}
+.image h1{
+  padding: 15%;
+  font-size: 5rem;
+}
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(to top, #b4e391 0%,#179bb2 44%,#b68ad8 89%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
