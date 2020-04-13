@@ -41,6 +41,7 @@ h2{
 
 }
 .pastels-content{
+ 
   margin: 5%;
   padding:7%;
   line-height: 2rem;
@@ -139,4 +140,66 @@ color: lightblue;
   to {
     transform: rotate(360deg);
   }
+}
+
+@media only screen and (max-width: 900px) {
+  .image{
+    display: grid;
+    grid-template-columns: 1fr;
+  background-image: url("https://thedevcouple.com/wp-content/uploads/2017/10/Interview-React-2.jpg");
+  background-size: cover;
+  height: 200%;
+  color: lightblue;
+  
+  }
+  .video-container{
+    background: linear-gradient(to bottom, #1105be 0%,#2cc8e4 44%,#2f8b46 89%);
+   height: 200%;
+    margin-top: -45px;
+  }
+  .videos{
+    display: grid;
+   grid-template-columns: 1fr;
+   font-size: 16px;
+   justify-items: center;
+  }
+.github-links{
+  background: linear-gradient(to bottom, #b4e391 0%,#94e42c 44%,#23d14f 89%);
+ height: 200%;
+  margin-top: -45px;
+}
+.cards{
+   display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 24px;
+  justify-items: center;
+}
+.cards > li {
+  margin-top: 20%;
+}
+.pastels{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: -20px;
+  height: 200%;
+  background-color: rgb(251, 192, 82);
+  color: rgb(52, 62, 207)
+
+}
+.pastels-content{
+ 
+  margin: 5%;
+  padding:7%;
+  line-height: 2rem;
+  font-size: 22px;
+}
+.pastels-2{
+  display: grid;
+  grid-template-columns:  1fr ;
+  margin-top: -20px;
+  height: 200%;
+  background-color: rgb(232, 255, 128);
+  color: rgb(136, 35, 161)
+
+}
 }
