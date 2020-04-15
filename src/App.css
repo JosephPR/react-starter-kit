@@ -1,24 +1,36 @@
 a{
-  color: rgb(98, 43, 226);
-  font-size: 30px;
+  color: rgb(255, 251, 0);
+  font-size: 40px;
+  text-decoration: none;
   
 }
 a:hover{
-  color: yellow;
+  color: rgb(224, 55, 4);
   
 }
 li {
   list-style: none;
 
 }
-
+.links-container{
+  background-color: rgb(26, 114, 99);
+  padding: 1% .5%;
+}
+.link{
+  font-size: 22px;
+}
+.links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 h2{ 
-  color: rgb(8, 146, 31);
+  color: rgb(53, 184, 129);
   text-align: center;
   font-size: 50px;
 }
 .github-links{
-  background: linear-gradient(to bottom, #b4e391 0%,#94e42c 44%,#23d14f 89%);
+  background: linear-gradient(to bottom, #196f75 0%,#1f9e74 44%,#d1b123 89%);
  height: 500px;
   margin-top: -45px;
 }
@@ -34,10 +46,10 @@ h2{
 .pastels{
   display: grid;
   grid-template-columns: 1fr 2.5fr;
-  margin-top: -20px;
+  /* margin-top: -20px; */
   height: 200%;
   background-color: rgb(251, 192, 82);
-  color: rgb(52, 62, 207)
+  color: rgb(7, 11, 56)
 
 }
 .pastels-content{
@@ -53,7 +65,7 @@ h2{
   margin-top: -20px;
   height: 200%;
   background-color: rgb(232, 255, 128);
-  color: rgb(136, 35, 161)
+  color: rgb(18, 3, 22)
 
 }
 .pastels-content-2{
@@ -85,7 +97,9 @@ h2{
   padding:5%;
 }
 .video-container{
-  background: linear-gradient(to bottom, #1105be 0%,#2cc8e4 44%,#2f8b46 89%);
+  background-image: url("chalk-on-wall.jpg");
+  background-size: cover;
+  background-position: bottom;
  height: 600px;
   margin-top: -45px;
 }
@@ -97,20 +111,21 @@ h2{
 }
 
 .footer {
-  height:200px;
+  height:100px;
   background-color: black;
   color: white;
   font-size: 30px;
   font-family: monospace;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 .image{
   display: grid;
   grid-template-columns: 1fr 2fr;
-background-image: url("https://thedevcouple.com/wp-content/uploads/2017/10/Interview-React-2.jpg");
-background-size: cover;
-height: 500px;
+  background-image: url("chalk-on-wall.jpg");
+  background-size: cover;
+  background-position: center;
+height: 400px;
 color: lightblue;
 
 }
@@ -119,7 +134,8 @@ color: lightblue;
   font-size: 5rem;
 }
 .App-header {
-  background: linear-gradient(to top, #b4e391 0%,#179bb2 44%,#b68ad8 89%);
+  background-image: url("chalk-on-wall.jpg");
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -143,6 +159,11 @@ color: lightblue;
 }
 
 @media only screen and (max-width: 900px) {
+  .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
   .image{
     display: grid;
     grid-template-columns: 1fr;
