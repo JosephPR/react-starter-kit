@@ -1,5 +1,6 @@
 import React from 'react'
 import VisitorItem from './visitor-item';
+import '../../App.css';
 
 
 export default function VisitorContainer(props) {

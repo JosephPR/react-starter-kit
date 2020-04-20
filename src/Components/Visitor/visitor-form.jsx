@@ -34,14 +34,18 @@ export default class VisitorForm extends Component {
   render(){
     return (
       <>
-      <h1 className='form-heading'>Visitor</h1>
+      <div className='form-heading'>
+      <h1>Visitor</h1>
       <form  onSubmit={(event) => this.handleSubmit(event)} className="form">
           <label htmlFor='name'>Name: </label>
                   <Input name="name" id="name" onChange={(event) => this.handleChange(event)} value={this.state.name} />
                 <label htmlFor='about'>About: </label>
                   <Input name="about" id="about" onChange={(event) => this.handleChange(event)} value={this.state.about} />
-                <Button type="submit" color="primary" variant="outlined">Submit</Button><br />
+                <Button type="submit" color="default" variant="outlined">Submit</Button><br />
       </form>
+
+      </div>
+   
       </>
     )
   }

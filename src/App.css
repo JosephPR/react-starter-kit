@@ -15,6 +15,19 @@ li {
   list-style: none;
 
 }
+.form-heading{
+  text-align: center;
+}
+.visitor-card-list{
+  height: 400px;
+  background-color: rgb(251, 192, 82);
+}
+#expand-panel{
+  color: rgb(18, 3, 22);
+  font-family: monospace;
+  max-width: 50%;
+  margin-left: 25%;
+}
 .links-container{
   background-color: rgb(26, 114, 99);
   padding: 1% .5%;

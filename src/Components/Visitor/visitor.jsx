@@ -19,14 +19,14 @@ export default class Visitor extends Component {
 
     fetchVisitors = () => {
       // const proxy = "https://cors-anywhere.herokuapp.com/"
-      let url = "http://localhost:3000/visitors"
+      let url = "https://starter-kit-backend.herokuapp.com/visitors"
       fetch(url)
       .then(response => response.json())
       .then(result => this.setState({visitors: result}))
     }
 
     deleteVisitor = (id) => {
-    let url = `http://localhost:3000/visitors${id}`
+    let url = `https://starter-kit-backend.herokuapp.com/visitors/${id}`
     fetch(url, {
       method: "DELETE",
       headers: {
@@ -46,7 +46,7 @@ export default class Visitor extends Component {
   }
 
   postVisitor = (newVisitor) => {
-    let url = "http://localhost:3000/visitors"
+    let url = "https://starter-kit-backend.herokuapp.com/visitors"
   fetch(url, {
     method: "POST",
     body: JSON.stringify(newVisitor),
