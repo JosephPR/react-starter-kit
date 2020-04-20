@@ -5,8 +5,11 @@ a{
   
 }
 a:hover{
-  color: rgb(224, 55, 4);
+  color: rgb(251, 192, 82);
   
+}
+hr{
+  margin: 5% 10%;
 }
 li {
   list-style: none;
@@ -31,7 +34,7 @@ h2{
 }
 .github-links{
   background: linear-gradient(to bottom, #196f75 0%,#1f9e74 44%,#d1b123 89%);
- height: 500px;
+ height: 800px;
   margin-top: -45px;
 }
 .cards{
@@ -74,6 +77,21 @@ h2{
   line-height: 2rem;
   font-size: 22px;
 }
+.pastels-3{
+  display: grid;
+  grid-template-columns:   1fr ;
+  margin-top: -20px;
+  height: 200%;
+  background-color: rgb(146, 248, 106);
+  color: rgb(18, 3, 22)
+
+}
+.pastels-content-3{
+  margin:5%;
+  padding:10%;
+  line-height: 2rem;
+  font-size: 22px;
+}
 .js{
   margin-top: 20%;
 }
@@ -111,7 +129,7 @@ h2{
 }
 
 .footer {
-  height:100px;
+  height:159px;
   background-color: black;
   color: white;
   font-size: 30px;
@@ -176,7 +194,6 @@ color: lightblue;
   .video-container{
     background: linear-gradient(to bottom, #1105be 0%,#2cc8e4 44%,#2f8b46 89%);
    height: 200%;
-    margin-top: -45px;
   }
   .videos{
     display: grid;
