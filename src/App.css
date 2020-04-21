@@ -9,7 +9,7 @@ a:hover{
   
 }
 hr{
-  margin: 5% 10%;
+  margin: 5% 5%;
 }
 li {
   list-style: none;
@@ -20,9 +20,23 @@ li {
 }
 .form-heading{
   text-align: center;
+  padding:5%;
+  background-image: url("chalk-on-wall.jpg");
+  background-size: cover;
+  background-position: top;
+  font-size: 30px;
 }
+.submit-button{
+  background-color: rgb(251, 192, 82, 0.5)!important;
+  font-size: 1.3rem!important;
+}
+.submit-button:hover{
+  background-color: rgb(251, 192, 82, 0.8)!important;
+  
+}
+
 .visitor-card-list{
-  padding-bottom: 30%;
+  padding: 5% 0% 30% 0%;
   height:100%;
   background-color: rgb(251, 192, 82);
 }
@@ -44,8 +58,8 @@ li {
   flex-direction: row;
   justify-content: space-evenly;
 }
-h2{ 
-  color: rgb(53, 184, 129);
+h2, h1{ 
+  color: rgb(146, 248, 106);
   text-align: center;
   font-size: 50px;
 }
@@ -60,7 +74,7 @@ h2{
   font-size: 24px;
   justify-items: center;
 }
-.cards > li {
+.cards > li, .js {
   margin-top: 20%;
 }
 .pastels{
@@ -81,7 +95,7 @@ h2{
 }
 .pastels-2{
   display: grid;
-  grid-template-columns:2.5fr   1fr ;
+  grid-template-columns:1fr ;
   margin-top: -20px;
   height: 200%;
   background-color: rgb(232, 255, 128);
@@ -94,6 +108,12 @@ h2{
   line-height: 2rem;
   font-size: 22px;
 }
+.pastels-content-3{
+ 
+  padding:3% 10% 10% 10%;
+  line-height: 2rem;
+  font-size: 22px;
+}
 .pastels-3{
   display: grid;
   grid-template-columns:   1fr ;
@@ -102,15 +122,6 @@ h2{
   background-color: rgb(146, 248, 106);
   color: rgb(18, 3, 22)
 
-}
-.pastels-content-3{
-  margin:5%;
-  padding:10%;
-  line-height: 2rem;
-  font-size: 22px;
-}
-.js{
-  margin-top: 20%;
 }
 .App {
   text-align: center;
@@ -165,10 +176,7 @@ height: 400px;
 color: lightblue;
 
 }
-.image h1{
-  padding: 15%;
-  font-size: 5rem;
-}
+
 .App-header {
   background-image: url("chalk-on-wall.jpg");
   background-size: cover;
@@ -177,8 +185,8 @@ color: lightblue;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  font-size: 60px;
 }
 
 .App-link {
@@ -242,7 +250,7 @@ color: lightblue;
   margin-top: -20px;
   height: 200%;
   background-color: rgb(251, 192, 82);
-  color: rgb(52, 62, 207)
+  color: rgb(4, 6, 36);
 
 }
 .pastels-content{
@@ -258,7 +266,7 @@ color: lightblue;
   margin-top: -20px;
   height: 200%;
   background-color: rgb(232, 255, 128);
-  color: rgb(136, 35, 161)
+  color: rgb(7, 0, 8);
 
 }
 .visitor-card-list{

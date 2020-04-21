@@ -41,7 +41,7 @@ export default class VisitorForm extends Component {
                   <Input name="name" id="name" onChange={(event) => this.handleChange(event)} value={this.state.name} />
                 <label htmlFor='about'>About Me: </label>
                   <Input name="about" id="about" onChange={(event) => this.handleChange(event)} value={this.state.about} />
-                <Button type="submit" color="default" variant="outlined">Submit</Button><br />
+                <Button type="submit" className="submit-button" variant="outlined">Submit</Button><br />
       </form>
 
       </div>

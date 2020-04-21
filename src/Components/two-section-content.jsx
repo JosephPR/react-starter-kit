@@ -36,7 +36,7 @@ function TwoSectionContent() {
 
         Create React App sets up a fully functional, offline-first Progressive Web App by default. Progressive Web Apps (PWAs) are web applications that use a collection of modern web technologies to provide native app-like experiences on all types of devices. They take advantage of the latest browser features to make your apps more performant, reliable and safe, even send push notifications and work when there’s no internet connection available.
         </p>
-        <img src="https://media1.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif?cid=790b761121f3a3e901cb80a773e2450d81ad416debe95e56&rid=giphy.gif" className="js" alt="logo" />
+        {/* <img src="https://media1.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif?cid=790b761121f3a3e901cb80a773e2450d81ad416debe95e56&rid=giphy.gif" className="js" alt="logo" /> */}
 
       </div>
     
