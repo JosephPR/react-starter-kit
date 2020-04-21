@@ -46,11 +46,11 @@ function TwoSectionContent() {
         <h2>Server rendering</h2>
 Server rendering is one of the coolest features in React. It can be used with any of the back-end technologies.
 
-Server Side Rendering (SSR) in React helps you to create components in the server and render that as HTML in your browser. And when all the JavaScript modules are downloaded in the browser, React takes the stage. Simple! <br/><br/>
+ <b>Server Side Rendering (SSR)</b> in React helps you to create components in the server and render that as HTML in your browser. And when all the JavaScript modules are downloaded in the browser, React takes the stage. Simple! <br/><br/>
 
 <hr></hr>
 <h2>Redux</h2>
-Redux is a JavaScript library developed for maintaining application states. When you are building a complex application, it will add overhead to manage states across components. Redux helps you store all your states in a single source. And of course, React plays well with Redux :)
+<b>Redux </b> is a JavaScript library developed for maintaining application states. When you are building a complex application, it will add overhead to manage states across components. Redux helps you store all your states in a single source. And of course, React plays well with Redux :)
 
         </p>
       </div>

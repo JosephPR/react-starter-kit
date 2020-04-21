@@ -35,11 +35,11 @@ export default class VisitorForm extends Component {
     return (
       <>
       <div className='form-heading'>
-      <h1>Visitor</h1>
+      <h1>Visitor's List</h1>
       <form  onSubmit={(event) => this.handleSubmit(event)} className="form">
           <label htmlFor='name'>Name: </label>
                   <Input name="name" id="name" onChange={(event) => this.handleChange(event)} value={this.state.name} />
-                <label htmlFor='about'>About: </label>
+                <label htmlFor='about'>About Me: </label>
                   <Input name="about" id="about" onChange={(event) => this.handleChange(event)} value={this.state.about} />
                 <Button type="submit" color="default" variant="outlined">Submit</Button><br />
       </form>

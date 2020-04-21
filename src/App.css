@@ -15,11 +15,15 @@ li {
   list-style: none;
 
 }
+.delete-button{
+  visibility: hidden;
+}
 .form-heading{
   text-align: center;
 }
 .visitor-card-list{
-  height: 400px;
+  padding-bottom: 30%;
+  height:100%;
   background-color: rgb(251, 192, 82);
 }
 #expand-panel{
@@ -149,6 +153,7 @@ h2{
   font-family: monospace;
   text-align: center;
   padding-top: 5%;
+  
 }
 .image{
   display: grid;
@@ -204,16 +209,19 @@ color: lightblue;
   color: lightblue;
   
   }
+
   .video-container{
     background: linear-gradient(to bottom, #1105be 0%,#2cc8e4 44%,#2f8b46 89%);
    height: 200%;
   }
+
   .videos{
     display: grid;
    grid-template-columns: 1fr;
    font-size: 16px;
    justify-items: center;
   }
+
 .github-links{
   background: linear-gradient(to bottom, #b4e391 0%,#94e42c 44%,#23d14f 89%);
  height: 200%;
@@ -221,7 +229,7 @@ color: lightblue;
 }
 .cards{
    display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   font-size: 24px;
   justify-items: center;
 }
@@ -252,5 +260,22 @@ color: lightblue;
   background-color: rgb(232, 255, 128);
   color: rgb(136, 35, 161)
 
+}
+.visitor-card-list{
+  padding-bottom: 30%;
+  height:100%;
+  background-color: rgb(251, 192, 82);
+}
+#expand-panel{
+  color: rgb(18, 3, 22);
+  font-family: monospace;
+  max-width: 90%;
+  margin-left: 5%;
+}
+.form{
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 16px;
+  justify-items: center;
 }
 }
