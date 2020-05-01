@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import VisitorForm from './visitor-form';
 import VisitorContainer from './visitor-container'
 
-import '../../App.css'
+import '../../App.scss'
 
 export default class Visitor extends Component {
     constructor () {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Input from '@material-ui/core/Input';
-import '../../App.css'
+import '../../App.scss'
 import Button from '@material-ui/core/Button';
 
 export default class VisitorForm extends Component {

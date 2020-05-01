@@ -1,5 +1,37 @@
+/* HSL */
+$color1: hsla(207%, 97%, 15%, 1);
+$color2: hsla(100%, 1%, 100%, 1);
+$color3: hsla(174%, 77%, 77%, 1);
+$color4: hsla(353%, 87%, 91%, 1);
+$color5: hsla(35%, 89%, 100%, 1);
+
+/* RGB */
+$color1: rgba(1, 22, 39, 1);
+$color2: rgba(253, 255, 252, 1);
+$color3: rgba(46, 196, 182, 1);
+$color4: rgba(231, 29, 54, 1);
+$color5: rgba(255, 159, 28, 1);
+
+/* HEX */
+$color1: #011627ff;
+$color2: #fdfffcff;
+$color3: #2ec4b6ff;
+$color4: #e71d36ff;
+$color5: #ff9f1cff;
+
+/* GRADIENT */
+$gradient-top: linear-gradient(0deg, #2ec4b6ff, #e71d36ff, #ff9f1cff);
+$gradient-right: linear-gradient(90deg, #011627ff, #fdfffcff, #2ec4b6ff, #e71d36ff, #ff9f1cff);
+$gradient-bottom: linear-gradient(180deg, #011627ff, #fdfffcff, #2ec4b6ff, #e71d36ff, #ff9f1cff);
+$gradient-left: linear-gradient(270deg, #2ec4b6ff, #e71d36ff, #ff9f1cff);
+$gradient-top-right: linear-gradient(45deg, #011627ff, #fdfffcff, #2ec4b6ff, #e71d36ff, #ff9f1cff);
+$gradient-bottom-right: linear-gradient(135deg, #011627ff, #fdfffcff, #2ec4b6ff, #e71d36ff, #ff9f1cff);
+$gradient-top-left: linear-gradient(225deg, #011627ff, #fdfffcff, #2ec4b6ff, #e71d36ff, #ff9f1cff);
+$gradient-bottom-left: linear-gradient(315deg, #011627ff, #fdfffcff, #2ec4b6ff, #e71d36ff, #ff9f1cff);
+$gradient-radial: radial-gradient(#011627ff, #fdfffcff, #2ec4b6ff, #e71d36ff, #ff9f1cff);
+
 a{
-  color: rgb(255, 251, 0);
+  color: $color5;
   font-size: 40px;
   text-decoration: none;
   
@@ -27,18 +59,18 @@ li {
   font-size: 30px;
 }
 .submit-button{
-  background-color: rgb(251, 192, 82, 0.5)!important;
+  background-color: rgba(251, 192, 82, 0.5)!important;
   font-size: 1.3rem!important;
 }
 .submit-button:hover{
-  background-color: rgb(251, 192, 82, 0.8)!important;
+  background-color: rgba(251, 192, 82, 0.8)!important;
   
 }
 
 .visitor-card-list{
   padding: 5% 0% 30% 0%;
   height:100%;
-  background-color: rgb(251, 192, 82);
+  background-color: $color3;
 }
 #expand-panel{
   color: rgb(18, 3, 22);
@@ -46,8 +78,9 @@ li {
   max-width: 50%;
   margin-left: 25%;
 }
+
 .links-container{
-  background-color: rgb(26, 114, 99);
+  background-color: $color1;
   padding: 1% .5%;
 }
 .link{
@@ -59,12 +92,12 @@ li {
   justify-content: space-evenly;
 }
 h2, h1{ 
-  color: rgb(146, 248, 106);
+  color: $color3;
   text-align: center;
   font-size: 50px;
 }
 .github-links{
-  background: linear-gradient(to bottom, #196f75 0%,#1f9e74 44%,#d1b123 89%);
+  background: $color4;
  height: 800px;
   margin-top: -45px;
 }
@@ -82,12 +115,11 @@ h2, h1{
   grid-template-columns: 1fr 2.5fr;
   /* margin-top: -20px; */
   height: 200%;
-  background-color: rgb(251, 192, 82);
-  color: rgb(7, 11, 56)
+  background-color: $color4;
+  color: $color2;
 
 }
-.pastels-content{
- 
+.pastels-content, .pastels-content-2,.pastels-content-3{
   margin: 5%;
   padding:7%;
   line-height: 2rem;
@@ -98,30 +130,20 @@ h2, h1{
   grid-template-columns:1fr ;
   margin-top: -20px;
   height: 200%;
-  background-color: rgb(232, 255, 128);
-  color: rgb(18, 3, 22)
+  background-color: $color3;
+  color: $color2;
 
-}
-.pastels-content-2{
-  margin:5%;
-  padding:10%;
-  line-height: 2rem;
-  font-size: 22px;
-}
-.pastels-content-3{
- 
-  padding:3% 10% 10% 10%;
-  line-height: 2rem;
-  font-size: 22px;
 }
 .pastels-3{
   display: grid;
   grid-template-columns:   1fr ;
   margin-top: -20px;
   height: 200%;
-  background-color: rgb(146, 248, 106);
+  background-color: $color5;
   color: rgb(18, 3, 22)
-
+}
+.pastels-content-3 > h2{
+ color: rgb(26, 114, 99);
 }
 .App {
   text-align: center;
@@ -136,7 +158,7 @@ h2, h1{
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo-2 {
-    animation: App-logo-spin 9s linear infinite;
+    animation: App-logo-spin 7s linear infinite;
   }
 }
 .player{
@@ -286,4 +308,29 @@ color: lightblue;
   font-size: 16px;
   justify-items: center;
 }
+}
+.title {
+  text-align: center;
+}
+
+.nowPlaying {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    justify-items: center;
+}
+.card{
+ padding: 7%;
+ line-height: 1.5rem;
+ font-size: 1.5rem;
+}
+.release-date{
+  color:black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  padding: 1% 5%;
+}
+#form{
+  padding-left: 35%;
 }
