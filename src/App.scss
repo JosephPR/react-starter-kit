@@ -3,7 +3,13 @@ $color1: #011627ff;
 $color2: #fdfffcff;
 $color3: #2ec4b6ff;
 $color4: #e71d36ff;
+$color4light: rgba(231, 29, 53, 0.198);
 $color5: #ff9f1cff;
+$color6: rgba(255, 159, 28, 0.5);
+
+.delete-button{
+  visibility: hidden;
+}
 a{
   color: $color5;
   font-size: 40px;
@@ -11,6 +17,14 @@ a{
 }
  a:hover{
   color: $color3; 
+}
+a[class="style-links"] {
+  color: $color1;
+  font-size: 4rem;
+  
+}
+a[class="style-links"]:hover {
+  color: $color4;
 }
 hr{
   margin: 5% 5%;
@@ -21,6 +35,7 @@ li {
 h2, h1{ 
   font-size: 50px;
   line-height: 40px;
+  padding:3%;
 }
 #expand-panel{
   max-width: 50%;
@@ -44,7 +59,7 @@ h2, h1{
 h2, h1,#expand-panel,.pastels-3,.user-submit-button:hover, .submit-button:hover{
   color:$color1!important;
 }
-.footer, .style-resources,.user-submit-button,submit-button,.pastels,.pastels-2{
+.footer, .style-resources,.user-submit-button,submit-button,.pastels{
   color:$color2!important;
 }
 .form-heading,.video-container,.image,.style-resources {
@@ -70,6 +85,11 @@ h2, h1,#expand-panel,.pastels-3,.user-submit-button:hover, .submit-button:hover{
   line-height: 2rem;
   font-size: 22px;
 }
+
+.pastels-content, .pastels-content-2{
+  background: $color6;
+  border-radius: 3%;
+}
 .pastels, .pastels-2, .pastels-3{
   height: 200%;
 }
@@ -90,8 +110,10 @@ h2, h1,#expand-panel,.pastels-3,.user-submit-button:hover, .submit-button:hover{
 .pastels-content-3 > h2{
  color: $color1;
 }
-.delete-button{
-  visibility: hidden;
+.pastels-content-3{
+ background: $color4light;
+ border-radius: 3%;
+
 }
 .form-heading{
   padding:5%;
@@ -125,13 +147,20 @@ h2, h1,#expand-panel,.pastels-3,.user-submit-button:hover, .submit-button:hover{
 }
 .github-links{
   background: $color4;
-  height: 800px;
+  height: 1100px;
   margin-top: -45px;
 }
 .cards{
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   font-size: 24px;
-  justify-items: center;
+}
+.material-card{
+  background: url("https://create-react-app.dev/img/logo-og.png")no-repeat left;
+  margin: 5%;
+}
+.description{
+  color:white;
+  font-size: 20px!important;
 }
 .cards > li, .js {
   margin-top: 20%;

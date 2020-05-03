@@ -1,23 +1,31 @@
 import React from 'react';
 import '../App.scss';
-
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
+import { githubLinks } from "../github-links"
 function ThreeColumnGrid() {
   return (
     <>
- 
-    <div className="github-links">     
-   
-      <h2>Github Resources</h2>
+
+<div className="github-links"> 
+<h2>Github Resources</h2>
       <ul className="cards">
-        <li><a rel="noopener noreferrer"  target="_blank" href="https://github.com/reactjs/reactjs.org">Reactjs</a></li>
-        <li><a rel="noopener noreferrer"  target="_blank" href="https://github.com/taniarascia/react-tutorial">React tutorial</a></li>
-        <li><a rel="noopener noreferrer"  target="_blank" href="https://github.com/facebook/react-native">React Native</a></li>
-        <li><a rel="noopener noreferrer"  target="_blank" href="https://github.com/react-component">React Components</a></li>
-        <li><a rel="noopener noreferrer"  target="_blank" href="https://github.com/ReactTraining">React Training</a></li>
-        <li><a  rel="noopener noreferrer" target="_blank" href="https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom">React Router Dom</a></li>
-        
+    {githubLinks.map(link => 
+         <Card className="material-card">
+         <CardContent>
+           <Typography className=""color="textSecondary" gutterBottom>
+
+           <a rel="noopener noreferrer"  target="_blank" href={link.link}>{link.name}</a> 
+           </Typography>
+           <Typography className="description" variant="body2" component="p">
+           {link.description}
+           </Typography>
+         </CardContent>
+       </Card>
+      )}
       </ul>
-      </div>
+</div>
     
     </>
   );
