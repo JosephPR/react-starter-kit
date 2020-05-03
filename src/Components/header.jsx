@@ -8,10 +8,10 @@ function Header() {
     <>
  
     <div className="App">
-      <header className="App-header">
+      <header className="style-resources">
         {/* <img src="https://media1.giphy.com/media/LpiVeIRgrqVsZJpM5H/giphy.gif?cid=790b76114bfe2f8248992275c69ebe32306f265f484a4a81&rid=giphy.gif" className="App-logo" alt="logo" /> */}
        
-         <ul>
+         <ul id="#style-links">
            <li><a rel="noopener noreferrer"  target="_blank" href="https://reacttraining.com/react-router/">React Router</a></li>
            <li><a rel="noopener noreferrer"  target="_blank" href="https://material-ui.com/">Material Design</a></li>
            <li><a rel="noopener noreferrer"  target="_blank" href="https://github.com/axios/axios">Axios</a></li>

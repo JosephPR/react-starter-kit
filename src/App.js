@@ -7,7 +7,7 @@ import Videos from './Components/videos';
 import Header from './Components/header'
 import Footer from './Components/footer';
 import Visitor from './Components/Visitor/visitor';
-import Hooks from './Components/add-user';
+import Hooks from './Components/Movies/add-user';
 
 function App() {
   return (

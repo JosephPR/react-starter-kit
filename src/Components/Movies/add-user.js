@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import AddUserForm from './add-user-form';
 import Movies from './playing';
+// import { useToggle } from "../Hooks/useToggle";
 
-import '../App.scss';
+import '../../App.scss';
 
 function AddUser() {
   const usersData = [
@@ -10,6 +11,8 @@ function AddUser() {
     { id: 2, name: 'Ajay', username: 'Node Master' },
     { id: 3, name: 'John', username: 'Jonny' },
   ]
+  // const [open, toggle] = useToggle(false);
+
   const [state, setState] = useState(usersData);
 
   const addUser = user => {
@@ -17,7 +20,7 @@ function AddUser() {
     setState([...state, user])
   }
 
-const users = state.map(user => <li>{user.id}. {user.name} - {user.username}</li>)
+const users = state.map(user => <ul><li>{user.id}. {user.name} - {user.username}</li></ul>)
 
 
   return (
@@ -25,6 +28,7 @@ const users = state.map(user => <li>{user.id}. {user.name} - {user.username}</li
        <div className="container">
               <h2>Add User</h2>
               <AddUserForm addUser={addUser} />
+
     <h1> {users}</h1>
     <Movies />
             </div>

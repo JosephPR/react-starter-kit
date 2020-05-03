@@ -1,6 +1,6 @@
 import React, { useState,  useEffect } from 'react';
 // import { Card, Image } from 'semantic-ui-react';
-import '../App.scss'
+import '../../App.scss'
 export default function Playing() {
     const [playing, setPlaying] = useState("");
    
