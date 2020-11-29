@@ -11,7 +11,7 @@ function Header() {
       <header className="style-resources">
         {/* <img src="https://media1.giphy.com/media/LpiVeIRgrqVsZJpM5H/giphy.gif?cid=790b76114bfe2f8248992275c69ebe32306f265f484a4a81&rid=giphy.gif" className="App-logo" alt="logo" /> */}
        
-         <ul id="#style-links">
+         <ul>
            <li><a class="style-links" rel="noopener noreferrer"  target="_blank" href="https://reacttraining.com/react-router/">React Router</a></li>
            <li><a class="style-links" rel="noopener noreferrer"  target="_blank" href="https://material-ui.com/">Material Design</a></li>
            <li><a class="style-links" rel="noopener noreferrer"  target="_blank" href="https://github.com/axios/axios">Axios</a></li>

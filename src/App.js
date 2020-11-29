@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import ThreeColumnGrid from './Components/three-column-grid';
-import TwoSectionContent from './Components/two-section-content';
+import TwoSectionContent from './Components/home';
 import Videos from './Components/videos';
 import Header from './Components/header'
 import Footer from './Components/footer';
@@ -39,7 +39,12 @@ function App() {
              
              </ul>
            </nav>
-
+           {/* <div className="header-container">
+           <header className="hero">
+            Starting out with React
+          </header>
+           </div>
+           */}
 
          </div>
            <Route exact path="/" render={() => <h1>Hello</h1>} component={TwoSectionContent} />

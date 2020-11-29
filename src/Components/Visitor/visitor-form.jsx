@@ -34,7 +34,7 @@ export default class VisitorForm extends Component {
   render(){
     return (
       <>
-      <div className='form-heading'>
+      <div className='dark'>
       <h1>Visitor's List</h1>
       <form  onSubmit={(event) => this.handleSubmit(event)} className="form">
           <label htmlFor='name'>Name: </label>

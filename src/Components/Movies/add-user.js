@@ -7,9 +7,9 @@ import '../../App.scss';
 
 function AddUser() {
   const usersData = [
-    { id: 1, name: 'Joseph', username: 'Flipnoggin' },
+    { id: 1, name: 'Joseph', username: 'Potato' },
     { id: 2, name: 'Ajay', username: 'Node Master' },
-    { id: 3, name: 'John', username: 'Jonny' },
+    { id: 3, name: 'John', username: 'Silly Goose' },
   ]
   // const [open, toggle] = useToggle(false);
 

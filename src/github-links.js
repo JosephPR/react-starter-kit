@@ -30,5 +30,15 @@
       link: "https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom",
       description: "React Router."
     },
+    {
+      name: "Awesome React",
+      link: "https://github.com/enaqx/awesome-react",
+      description: "An amazing list of React links."
+    },
+    {
+      name: "Awesome React Native",
+      link: "https://github.com/jondot/awesome-react-native",
+      description: "An amazing list of React Native links."
+    },
   ] 
  

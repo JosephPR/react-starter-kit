@@ -6,9 +6,17 @@ $color4: #e71d36ff;
 $color4light: rgba(231, 29, 53, 0.198);
 $color5: #ff9f1cff;
 $color6: rgba(255, 159, 28, 0.5);
-
-.delete-button{
-  visibility: hidden;
+body{
+  max-width: 100vw;
+}
+li {
+  list-style: none;
+}
+h2, h1{ 
+  margin: 0;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 4rem;
 }
 a{
   color: $color5;
@@ -18,6 +26,7 @@ a{
  a:hover{
   color: $color3; 
 }
+
 a[class="style-links"] {
   color: $color1;
   font-size: 4rem;
@@ -26,23 +35,61 @@ a[class="style-links"] {
 a[class="style-links"]:hover {
   color: $color4;
 }
-hr{
-  margin: 5% 5%;
+
+.MuiInputBase-root{
+  color: $color3!important;
 }
-li {
-  list-style: none;
+.form-heading, .title,.footer, #hooks-form,h2, h1{
+  text-align: center;
 }
-h2, h1{ 
+.home-header{
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;
+  background-color: $color1;
+  margin: auto;
+}
+.home-header h1 {
+ align-self: center;
+ color: $color2;
+}
+
+.content{
+  margin: 10% 15%;
+  line-height: 2.5rem;
+  font-size: 26px;
+  color:$color1;
+  text-align: center;
+}
+.steps{
+  color: $color2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:10rem;
   font-size: 50px;
-  line-height: 40px;
-  padding:3%;
+  font-weight: 900;
+  letter-spacing: .2ch;
+  background-color: $color4;
+}
+.odd{
+  background-color: $color5;
+}
+.dark{
+  background-color: $color1;
+  color:#fff;
+  height:15rem;
+}
+.delete-button{
+  visibility: hidden;
+}
+.form{
+  padding: 3%;
+  display: flex;
+  justify-content: center;
 }
 #expand-panel{
   max-width: 50%;
   margin-left: 25%;
-}
-#form{
-  padding-left: 35%;
 }
 #hooks-form{
   flex-direction: column;
@@ -56,69 +103,24 @@ h2, h1{
 #expand-panel,.footer{
   font-family: monospace!important;
 }
-h2, h1,#expand-panel,.pastels-3,.user-submit-button:hover, .submit-button:hover{
-  color:$color1!important;
-}
-.footer, .style-resources,.user-submit-button,submit-button,.pastels{
+
+.footer, .style-resources,.user-submit-button,submit-button{
   color:$color2!important;
 }
 .form-heading,.video-container,.image,.style-resources {
   background-image: url("chalk-on-wall.jpg");
   background-size: cover;
 }
-.form-heading, .title,.footer, #hooks-form,h2, h1{
-  text-align: center;
-}
+
 #hooks-form,.links,.style-resources {
   display: flex;
 }
-.videos, .nowPlaying, .pastels,  .pastels-2, .pastels-3, .cards, .image{
+.videos, .nowPlaying, .cards, .image{
   display: grid;
 }
 .videos, .nowPlaying{
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-}
-.pastels-content, .pastels-content-2,.pastels-content-3{
-  margin: 5%;
-  padding:7%;
-  line-height: 2rem;
-  font-size: 22px;
-}
-
-.pastels-content, .pastels-content-2{
-  background: $color6;
-  border-radius: 3%;
-}
-.pastels, .pastels-2, .pastels-3{
-  height: 200%;
-}
-.pastels-2, .pastels-3{
-  margin-top: -20px;
-  grid-template-columns: 1fr;
-}
-.pastels{
-  grid-template-columns: 1fr 2.5fr;
-  background-color: $color4;
-}
-.pastels-2{
-  background-color: $color3;
-}
-.pastels-3{  
-  background-color: $color5;
-}
-.pastels-content-3 > h2{
- color: $color1;
-}
-.pastels-content-3{
- background: $color4light;
- border-radius: 3%;
-
-}
-.form-heading{
-  padding:5%;
-  background-position: top;
-  font-size: 30px;
 }
 .user-submit-button,.submit-button{
   background-color:$color4!important;
@@ -147,8 +149,7 @@ h2, h1,#expand-panel,.pastels-3,.user-submit-button:hover, .submit-button:hover{
 }
 .github-links{
   background: $color4;
-  height: 1100px;
-  margin-top: -45px;
+  height: 1400px;
 }
 .cards{
   grid-template-columns: 1fr 1fr;
@@ -156,7 +157,7 @@ h2, h1,#expand-panel,.pastels-3,.user-submit-button:hover, .submit-button:hover{
 }
 .material-card{
   background: url("https://create-react-app.dev/img/logo-og.png")no-repeat left;
-  margin: 5%;
+  margin: 7%;
 }
 .description{
   color:white;
@@ -165,11 +166,7 @@ h2, h1,#expand-panel,.pastels-3,.user-submit-button:hover, .submit-button:hover{
 .cards > li, .js {
   margin-top: 20%;
 }
-.App-logo-2 {
-  height: 40vmin;
-  margin-top: 30%;
-  margin-left: 13%;
-}
+
 .player{
   padding:5%;
 }
@@ -189,7 +186,8 @@ h2, h1,#expand-panel,.pastels-3,.user-submit-button:hover, .submit-button:hover{
 .image{
   grid-template-columns: 1fr 2fr;
   background-position: center;
-  height: 400px;
+  height: 300px;
+  margin: auto;
 }
 .style-resources {
   min-height: 100vh;
@@ -228,4 +226,9 @@ h2, h1,#expand-panel,.pastels-3,.user-submit-button:hover, .submit-button:hover{
   max-width: 90%;
   margin-left: 5%;
 }
+}
+
+
+.playing-info{
+  color: rgba(1, 22, 39, 0.76);
 }
